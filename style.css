@@ -585,12 +585,12 @@ section:not(#hero):first-of-type {
     }
 
     #hero img {
-        object-position: 70% 55%;
+        object-position: 55% center
 
     }
 
     .contenidoHero {
-        padding-top: 120px;
+        padding-top: 150px;
     }
 
     section:not(#hero) {
@@ -716,6 +716,7 @@ section:not(#hero):first-of-type {
     #hero #mostrarSpotify {
         width: min(100%, 310px);
         margin: 8px 0;
+        transform: translateY(160px);
     }
 }
 /* =========================================
@@ -2123,8 +2124,8 @@ section:not(#hero):first-of-type {
 
 @media (max-width: 900px) {
     #contador {
-        min-height: 700px;
-        padding: 110px 22px 90px;
+        min-height: 100px;
+        padding: 90px 22px 60px;
     }
 
     #countdown {
@@ -2866,7 +2867,7 @@ padding-bottom:55px;
 @media (max-width: 650px) {
 
     .timeline::before {
-        left: 18px;
+        left: 24px;
     }
 
     .timeline .item,
@@ -2875,13 +2876,13 @@ padding-bottom:55px;
         width: 100%;
         min-height: 125px;
         margin: 0;
-        padding: 0 10px 45px 58px;
+        padding: 0 14px 45px 72px;
         text-align: left;
     }
 
     .timeline .item:nth-child(odd)::before,
     .timeline .item:nth-child(even)::before {
-        left: 9px;
+        left: 15px;
         right: auto;
     }
 
@@ -2937,4 +2938,77 @@ padding-bottom:55px;
 .timeline .item:nth-child(even)::before {
     left: -9px !important;
     right: auto !important;
+}
+@media (max-width: 768px) 
+{
+    .timeline .item:nth-child(odd)::before,
+.timeline .item:nth-child(even)::before{
+    left: 15px !important;
+    right: auto !important;
+}
+    .contenidoHero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        transform: none;
+        transform: scale(0.82);
+transform-origin: top center;
+        text-align: center;
+    }
+}
+.contenidoHero h3 {
+    margin-bottom: 8px;
+}
+
+.contenidoHero h3::after {
+    margin-top: 6px;
+}
+
+.contenidoHero h1 {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 2.8rem;
+    line-height: 0.82;
+}
+
+.contenidoHero h1 span {
+    margin: 0 4px;
+    font-size: 1.15em;
+}
+
+.contenidoHero p {
+    margin: 12px 0 8px;
+    font-size: 0.72rem;
+}
+@media (max-width: 768px) {
+    .timeline {
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    .timeline::before {
+        left: 24px !important;
+        transform: none !important;
+    }
+
+    .timeline .item,
+    .timeline .item:nth-child(odd),
+    .timeline .item:nth-child(even) {
+        position: relative !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 14px 45px 78px !important;
+        text-align: left !important;
+    }
+
+    .timeline .item::before,
+    .timeline .item:nth-child(odd)::before,
+    .timeline .item:nth-child(even)::before {
+        left: 15px !important;
+        right: auto !important;
+        transform: none !important;
+    }
 }
