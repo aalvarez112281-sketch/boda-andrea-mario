@@ -3190,7 +3190,7 @@ overflow: hidden;
 }
 
 .sobre.abierto .carta{
-    transform: translateY(-125px);
+    transform: translateY(-80px);
     z-index: 5;
 }
 
@@ -3198,4 +3198,24 @@ overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(.6);
     pointer-events: none;
+}
+/* CORRECCIÓN FINAL DE LA TARJETA DEL SOBRE */
+.carta {
+    height: 220px;
+    padding: 22px 18px 18px;
+}
+
+.carta h2 {
+    margin-bottom: 6px;
+    font-size: 2.15rem;
+    line-height: 1.05;
+}
+
+.carta p {
+    font-size: 0.72rem;
+    line-height: 1.5;
+}
+
+.carta .pase-carta {
+    margin-top: 6px;
 }
