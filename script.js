@@ -114,3 +114,20 @@ document.addEventListener("DOMContentLoaded", () => {
    
 
 });
+const sobre = document.querySelector(".sobre");
+const sello = document.getElementById("abrirSobre");
+const pantallaSobre = document.getElementById("sobreInicial");
+
+if (sobre && sello && pantallaSobre) {
+    sello.addEventListener("click", () => {
+        sobre.classList.add("abierto");
+
+        setTimeout(() => {
+            pantallaSobre.classList.add("ocultar");
+        }, 1800);
+
+        setTimeout(() => {
+            pantallaSobre.style.display = "none";
+        }, 2600);
+    });
+}
