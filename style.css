@@ -364,14 +364,15 @@ section p {
     justify-content: center;
     overflow: hidden;
     background:
-       linear-gradient(rgba(38, 28, 20, 0.28), rgba(38, 28, 20, 0.38)),
-    url("img/manos-nueva.png") center / cover no-repeat;
-    }
+        linear-gradient(rgba(15, 10, 8, 0.18), rgba(15, 10, 8, 0.35)),
+        url("img/manos-nueva.png") center center / cover no-repeat;
+}
+    
 #contador::before {
     content: "";
     position: absolute;
     inset: 0;
-    backdrop-filter: sepia(14%) saturate(82%) brightness(92%);
+    
 }
 
 #contador h2 {
@@ -797,8 +798,8 @@ section:not(#hero):first-of-type {
     height: 100%;
     max-width: none;
     object-fit: cover;
-   object-position: 86% 25%;
-    filter: sepia(8%) saturate(100%) brightness(103%);
+   object-position: 86% 10%;
+    filter: brightness(82%) contrast(108%) saturate(92%);
 }
 
 @media (max-width: 720px) {
@@ -808,7 +809,7 @@ section:not(#hero):first-of-type {
 
     .bienvenida-foto {
         height: 520px;
-        object-position: center 45%;
+        object-position: center 25%;
     }
 }
 /* =========================================
@@ -3216,4 +3217,9 @@ overflow: hidden;
 
 .carta .pase-carta {
     margin-top: 6px;
+}#contador {
+    position: relative;
+    background:
+        linear-gradient(rgba(15, 10, 8, 0.42), rgba(15, 10, 8, 0.58)),
+        url("img/manos-nueva.png") center / cover no-repeat;
 }
