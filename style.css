@@ -791,16 +791,14 @@ section:not(#hero):first-of-type {
     color: var(--dorado-oscuro);
 }
 
-.bienvenida-foto {
+.bienvenida-foto 
+   #hero > img {
     width: 100%;
-    height: clamp(420px, 72vw, 760px);
+    height: 100%;
+    max-width: none;
     object-fit: cover;
-    object-position: center;
-    filter:
-        sepia(18%)
-        saturate(82%)
-        contrast(105%)
-        brightness(92%);
+   object-position: 86% 25%;
+    filter: sepia(8%) saturate(100%) brightness(103%);
 }
 
 @media (max-width: 720px) {
@@ -3190,7 +3188,7 @@ overflow: hidden;
 }
 
 .sobre.abierto .carta{
-    transform: translateY(-80px);
+    transform: translateY(-px);
     z-index: 5;
 }
 
