@@ -3256,3 +3256,12 @@ overflow: hidden;
         margin: 0 auto;
     }
 }
+@media (max-width: 720px) {
+    #abrirInvitacion {
+        margin-top: 110px;
+    }
+
+    #mostrarSpotify {
+        margin-top: 16px;
+    }
+}
