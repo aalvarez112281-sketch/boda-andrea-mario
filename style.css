@@ -3289,3 +3289,12 @@ overflow: hidden;
         margin-bottom: 26px;
     }
 }
+@media (max-width: 720px) {
+    #hero .contenidoHero > button {
+        transform: translateY(70px) !important;
+    }
+
+    #hero .contenidoHero > button:hover {
+        transform: translateY(70px) !important;
+    }
+}
