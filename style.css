@@ -590,15 +590,17 @@ section:not(#hero):first-of-type {
 
     }
 
-    .contenidoHero {
-        padding-top: 90px;
-    }
+   .contenidoHero {
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
 #abrirInvitacion {
-    margin-top: 120px;
+    transform: translateY(120px);
 }
 
 #mostrarSpotify {
-    margin-top: 16px;
+    transform: translateY(120px);
 }
     section:not(#hero) {
         padding: 72px 18px;
