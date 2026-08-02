@@ -3319,3 +3319,52 @@ overflow: hidden;
         transform: translateY(70px) !important;
     }
 }
+
+/* AJUSTE DEFINITIVO PORTADA MÓVIL — BOTONES ABAJO */
+@media (max-width: 720px) {
+    #hero {
+        position: relative !important;
+        width: 100% !important;
+        min-height: 100svh !important;
+        height: 100svh !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    #hero .contenidoHero {
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        margin: 0 !important;
+        padding: 34px 20px 190px !important;
+        transform: none !important;
+        text-align: center !important;
+        display: block !important;
+    }
+
+    #hero #abrirInvitacion,
+    #hero #mostrarSpotify {
+        position: absolute !important;
+        left: 50% !important;
+        width: calc(100% - 44px) !important;
+        max-width: 340px !important;
+        min-height: 66px !important;
+        margin: 0 !important;
+        transform: translateX(-50%) !important;
+        z-index: 20 !important;
+    }
+
+    #hero #abrirInvitacion {
+        bottom: 104px !important;
+    }
+
+    #hero #mostrarSpotify {
+        bottom: 26px !important;
+    }
+
+    #hero #abrirInvitacion:hover,
+    #hero #mostrarSpotify:hover {
+        transform: translateX(-50%) !important;
+    }
+}
