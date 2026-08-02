@@ -3320,27 +3320,32 @@ overflow: hidden;
     }
 }
 
-/* AJUSTE DEFINITIVO PORTADA MÓVIL — BOTONES ABAJO */
+/* ==================================================
+   ENTREGA FINAL — PORTADA MÓVIL ESTABLE
+   Mantiene los botones anclados al borde inferior.
+================================================== */
 @media (max-width: 720px) {
     #hero {
         position: relative !important;
+        display: block !important;
         width: 100% !important;
-        min-height: 100svh !important;
         height: 100svh !important;
+        min-height: 100svh !important;
         padding: 0 !important;
         overflow: hidden !important;
     }
 
     #hero .contenidoHero {
-        position: relative !important;
+        position: absolute !important;
+        inset: 0 !important;
         width: 100% !important;
         height: 100% !important;
-        min-height: 100% !important;
+        min-height: 0 !important;
         margin: 0 !important;
-        padding: 34px 20px 190px !important;
+        padding: 48px 22px 24px !important;
         transform: none !important;
-        text-align: center !important;
         display: block !important;
+        text-align: center !important;
     }
 
     #hero #abrirInvitacion,
@@ -3349,7 +3354,6 @@ overflow: hidden;
         left: 50% !important;
         width: calc(100% - 44px) !important;
         max-width: 340px !important;
-        min-height: 66px !important;
         margin: 0 !important;
         transform: translateX(-50%) !important;
         z-index: 20 !important;
@@ -3360,7 +3364,7 @@ overflow: hidden;
     }
 
     #hero #mostrarSpotify {
-        bottom: 26px !important;
+        bottom: 24px !important;
     }
 
     #hero #abrirInvitacion:hover,
